@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Hub - The Complete Web3 Development Resource</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e16d25b8-267d-47ae-8154-0d64d8345a88.png" alt="Web3 Hub logo" />
+                <h1>Web3 Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search Web3 technologies...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Your Gateway to Web3 Development</h2>
+                <p>Comprehensive resources, tutorials, and tools for blockchain, smart contracts, decentralized applications, and more.</p>
+                <div class="cta-buttons">
+                    <a href="#explore" class="btn primary">Explore Technologies</a>
+                    <a href="#search" class="btn secondary">Search Resources</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2fcc5993-4f07-4cf7-9332-880dfa539603.png" alt="Abstract visualization of blockchain technology" />
+            </div>
+        </div>
+    </section>
+
+    <section id="explore" class="featured-technologies">
+        <div class="container">
+            <h3>Core Web3 Technologies</h3>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/abfd6269-36e7-4388-833b-57b2404ff632.png" alt="Blockchain" />
+                    <h4>Blockchain</h4>
+                    <p>Learn about distributed ledger technology and consensus mechanisms.</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c69c37c7-c753-4b86-a483-f6bcd61dc01e.png" alt="Smart Contracts" />
+                    <h4>Smart Contracts</h4>
+                    <p>Create self-executing contracts with Ethereum, Solana, and more.</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1f9d092e-8013-4758-9b94-a28954b2a31b.png" alt="dApps" />
+                    <h4>dApps</h4>
+                    <p>Build decentralized applications with Web3.js and Ethers.js.</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e975b9e7-b1f7-41f5-b1af-0588752e000e.png" alt="NFTs" />
+                    <h4>NFTs</h4>
+                    <p>Understand non-fungible tokens and digital ownership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <div class="container">
+            <h3>Web3 Technology Search</h3>
+            <div class="search-container">
+                <input type="text" id="mainSearch" placeholder="Search blockchain, smart contracts, DeFi...">
+                <button id="mainSearchBtn">Search</button>
+            </div>
+            <div id="searchResults" class="results-container"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Web3 Hub. All rights Dev.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

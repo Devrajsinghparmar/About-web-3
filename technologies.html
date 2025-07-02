@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Technologies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            50% { transform: rotate(0deg); }
+            75% { transform: rotate(-5deg); }
+            100% { transform: rotate(0deg); }
+        }
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .tech-card {
+            transition: all 0.3s ease;
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="py-16 text-center bg-gradient-to-r from-purple-900 to-indigo-800">
+        <h1 class="text-5xl font-bold mb-6 pulse-animation">Web3 Technologies</h1>
+        <p class="text-xl max-w-3xl mx-auto">The building blocks of the decentralized internet</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blockchain Card -->
+            <div class="tech-card bg-gray-800 rounded-xl p-6 hover:bg-indigo-900">
+                <div class="flex justify-center mb-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b75d4243-2b69-4b2c-8619-d21851b0421b.png" alt="Block chain nodes with digital connections and cryptocurrency symbols" class="rounded-lg float-animation">
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Blockchain</h3>
+                <p class="mb-4">Decentralized ledger technology enabling secure, transparent transactions without intermediaries.</p>
+                <div class="text-indigo-400">
+                    <p>✓ Tamper-proof records</p>
+                    <p>✓ Distributed consensus</p>
+                    <p>✓ Immutable data</p>
+                </div>
+            </div>
+
+            <!-- Smart Contracts Card -->
+            <div class="tech-card bg-gray-800 rounded-xl p-6 hover:bg-purple-900">
+                <div class="flex justify-center mb-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/95ba0e92-ae01-427c-9bfe-a127417e9068.png" alt="Digital smart contract code with ethereum logo and visible terms" class="rounded-lg float-animation" style="animation-delay: 0.5s;">
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Smart Contracts</h3>
+                <p class="mb-4">Self-executing agreements with terms written directly into code running on blockchain.</p>
+                <div class="text-purple-400">
+                    <p>✓ Automated execution</p>
+                    <p>✓ Trustless agreements</p>
+                    <p>✓ Reduced fraud</p>
+                </div>
+            </div>
+
+            <!-- dApps Card -->
+            <div class="tech-card bg-gray-800 rounded-xl p-6 hover:bg-blue-900">
+                <div class="flex justify-center mb-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e6b886ed-614f-4dee-8505-ad6ef8968c7a.png" alt="Decentralized apps on mobile and desktop interfaces with blockchain icons" class="rounded-lg float-animation" style="animation-delay: 1s;">
+                </div>
+                <h3 class="text-2xl font-bold mb-3">dApps</h3>
+                <p class="mb-4">Decentralized applications that operate on peer-to-peer networks instead of centralized servers.</p>
+                <div class="text-blue-400">
+                    <p>✓ Censorship-resistant</p>
+                    <p>✓ Open source</p>
+                    <p>✓ Token incentivized</p>
+                </div>
+            </div>
+
+            <!-- Cryptocurrencies Card -->
+            <div class="tech-card bg-gray-800 rounded-xl p-6 hover:bg-green-900">
+                <div class="flex justify-center mb-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/72337776-1376-4229-85dc-048eca4f306f.png" alt="Bitcoin, Ethereum and other major crypto coins with price charts" class="rounded-lg float-animation" style="animation-delay: 1.5s;">
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Cryptocurrencies</h3>
+                <p class="mb-4">Digital assets designed for secure, decentralized transactions and as store of value.</p>
+                <div class="text-green-400">
+                    <p>✓ Borderless transfers</p>
+                    <p>✓ Limited supply</p>
+                    <p>✓ Pseudonymous</p>
+                </div>
+            </div>
+
+            <!-- NFTs Card -->
+            <div class="tech-card bg-gray-800 rounded-xl p-6 hover:bg-yellow-900">
+                <div class="flex justify-center mb-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d16bad6e-629a-4e6c-89ee-7c71fb4fb092.png" alt="Colorful NFT artworks including crypto punks and bored ape examples" class="rounded-lg float-animation" style="animation-delay: 2s;">
+                </div>
+                <h3 class="text-2xl font-bold mb-3">NFTs</h3>
+                <p class="mb-4">Non-fungible tokens representing unique ownership of digital or physical assets on blockchain.</p>
+                <div class="text-yellow-400">
+                    <p>✓ Provable scarcity</p>
+                    <p>✓ Royalty streams</p>
+                    <p>✓ Digital ownership</p>
+                </div>
+            </div>
+
+            <!-- DAOs Card -->
+            <div class="tech-card bg-gray-800 rounded-xl p-6 hover:bg-red-900">
+                <div class="flex justify-center mb-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/72355c15-071c-460f-899c-d82e82a295ec.png" alt="Voting interface showing community governance and token distribution" class="rounded-lg float-animation" style="animation-delay: 2.5s;">
+                </div>
+                <h3 class="text-2xl font-bold mb-3">DAOs</h3>
+                <p class="mb-4">Decentralized Autonomous Organizations governed by community voting and smart contracts.</p>
+                <div class="text-red-400">
+                    <p>✓ Token-based governance</p>
+                    <p>✓ Transparent treasury</p>
+                    <p>✓ Flat hierarchy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <h2 class="text-4xl font-bold mb-6">The Web3 Technology Stack</h2>
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-xl p-8">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4aee30fb-2b87-4931-914b-17d64d8026fc.png" alt="Layered technology diagram showing blockchain, protocols, and apps" class="w-full rounded-lg mb-6 pulse-animation">
+                <p class="text-lg mb-6">Web3 combines multiple revolutionary technologies to create a user-owned internet with built-in economic functionality.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="bg-indigo-900 p-4 rounded-lg">Blockchain Layer</div>
+                    <div class="bg-purple-900 p-4 rounded-lg">Smart Contracts</div>
+                    <div class="bg-blue-900 p-4 rounded-lg">Protocols</div>
+                    <div class="bg-green-900 p-4 rounded-lg">dApps</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
