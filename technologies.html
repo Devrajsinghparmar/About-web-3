@@ -34,9 +34,51 @@
         .float-animation {
             animation: float 6s ease-in-out infinite;
         }
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav a.active,
+nav a:hover {
+    color: white;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s;
+}
+
+nav a.active:after,
+nav a:hover:after {
+    width: 100%;
+}
     </style>
 </head>
 <body class="bg-gray-900 text-white">
+    <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
     <header class="py-16 text-center bg-gradient-to-r from-purple-900 to-indigo-800">
         <h1 class="text-5xl font-bold mb-6 pulse-animation">Web3 Technologies</h1>
         <p class="text-xl max-w-3xl mx-auto">The building blocks of the decentralized internet</p>
